@@ -18,11 +18,13 @@ const ToolBar = () => {
             >
               <MenuIcon />
             </IconButton>
-            <img style={{width: '50px', marginRight: '20px'}} src="https://wm-551003.oml.ru/d/log.png" alt=""/>
-            <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-              My Coffee
-            </Typography>
-            <List component="ul" sx={{display: 'flex', justifyContent: 'space-between'}}>
+            <NavLink to={'/'} style={{ color: 'inherit', textDecoration: 'none', display: 'flex', alignItems: 'center', padding: '20px 0'}}>
+              <img style={{width: '80px', marginRight: '20px'}} src="https://wm-551003.oml.ru/d/log.png" alt=""/>
+              <Typography variant="h6" component="div" sx={{flexGrow: 1, fontSize: '23px', fontWeight: 600, fontStyle: 'oblique'}}>
+                My Coffee
+              </Typography>
+            </NavLink>
+            <List component="ul" sx={{display: 'flex', justifyContent: 'space-between', width: '60%', marginLeft: 'auto'}}>
               <ListItem><NavLink to={'/'}>Home</NavLink></ListItem>
               <ListItem><NavLink to={'/pages/about'}>About</NavLink></ListItem>
               <ListItem><NavLink to={'/pages/history'}>History</NavLink></ListItem>
