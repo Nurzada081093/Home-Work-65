@@ -29,7 +29,7 @@ const ToolBar = () => {
               <ListItem><NavLink to={'/pages/about'}>About</NavLink></ListItem>
               <ListItem><NavLink to={'/pages/history'}>History</NavLink></ListItem>
               <ListItem><NavLink to={'/pages/news'}>News</NavLink></ListItem>
-              <ListItem><NavLink to={'/pages/offer'}>Offer</NavLink></ListItem>
+              <ListItem><NavLink to={'/pages/contacts'}>Contacts</NavLink></ListItem>
               <ListItem><NavLink to={'/pages/comment'}>Comment</NavLink></ListItem>
               <ListItem><NavLink to={'/pages/admin'}>Admin</NavLink></ListItem>
             </List>
