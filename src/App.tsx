@@ -1,8 +1,9 @@
+import MyCoffee from './Containers/MyCoffee/MyCoffee.tsx';
 
 const App = () => {
   return (
     <>
-      I'm starting my home work #65! ^_^
+      <MyCoffee/>
     </>
   );
 };
