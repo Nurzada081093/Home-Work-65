@@ -2,7 +2,6 @@ import { AppBar, Box, IconButton, List, ListItem, Toolbar, Typography, Container
 import MenuIcon from '@mui/icons-material/Menu';
 import { NavLink } from 'react-router-dom';
 
-
 const ToolBar = () => {
   return (
     <Box sx={{ flexGrow: 1 }}>
@@ -24,14 +23,98 @@ const ToolBar = () => {
                 My Coffee
               </Typography>
             </NavLink>
-            <List component="ul" sx={{display: 'flex', justifyContent: 'space-between', width: '60%', marginLeft: 'auto'}}>
-              <ListItem><NavLink to={'/'}>Home</NavLink></ListItem>
-              <ListItem><NavLink to={'/pages/about'}>About</NavLink></ListItem>
-              <ListItem><NavLink to={'/pages/history'}>History</NavLink></ListItem>
-              <ListItem><NavLink to={'/pages/news'}>News</NavLink></ListItem>
-              <ListItem><NavLink to={'/pages/contacts'}>Contacts</NavLink></ListItem>
-              <ListItem><NavLink to={'/pages/comment'}>Comment</NavLink></ListItem>
-              <ListItem><NavLink to={'/pages/admin'}>Admin</NavLink></ListItem>
+            <List component="ul" sx={{marginLeft: 'auto', width: '70%', display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between'}}>
+              <ListItem sx={{width: '100px'}}>
+                <NavLink
+                  to={'/'}
+                  style={({ isActive }) => ({
+                    color: isActive ? 'lightcyan' : 'inherit',
+                    fontSize: isActive ? '20px' : 'inherit',
+                    fontWeight: isActive ? 'bold' : 'normal',
+                    textDecoration: 'none',
+                  })}
+                >
+                  Home
+                </NavLink>
+              </ListItem>
+              <ListItem sx={{ width: '100px'}}>
+                <NavLink
+                  to={'/pages/about'}
+                  style={({ isActive }) => ({
+                    color: isActive ? 'lightcyan' : 'inherit',
+                    fontSize: isActive ? '20px' : 'inherit',
+                    fontWeight: isActive ? 'bold' : 'normal',
+                    textDecoration: 'none',
+                  })}
+                >
+                  About
+                </NavLink>
+              </ListItem>
+              <ListItem sx={{width: '100px' }}>
+                <NavLink
+                  to={'/pages/history'}
+                  style={({ isActive }) => ({
+                    color: isActive ? 'lightcyan' : 'inherit',
+                    fontSize: isActive ? '20px' : 'inherit',
+                    fontWeight: isActive ? 'bold' : 'normal',
+                    textDecoration: 'none',
+                  })}
+                >
+                  History
+                </NavLink>
+              </ListItem>
+              <ListItem sx={{ width: '100px' }}>
+                <NavLink
+                  to={'/pages/news'}
+                  style={({ isActive }) => ({
+                    color: isActive ? 'lightcyan' : 'inherit',
+                    fontSize: isActive ? '20px' : 'inherit',
+                    fontWeight: isActive ? 'bold' : 'normal',
+                    textDecoration: 'none',
+                  })}
+                >
+                  News
+                </NavLink>
+              </ListItem>
+              <ListItem sx={{width: '100px' }}>
+                <NavLink
+                  to={'/pages/contacts'}
+                  style={({ isActive }) => ({
+                    color: isActive ? 'lightcyan' : 'inherit',
+                    fontSize: isActive ? '20px' : 'inherit',
+                    fontWeight: isActive ? 'bold' : 'normal',
+                    textDecoration: 'none',
+                  })}
+                >
+                  Contacts
+                </NavLink>
+              </ListItem>
+              <ListItem sx={{width: '100px'}}>
+                <NavLink
+                  to={'/pages/comment'}
+                  style={({ isActive }) => ({
+                    color: isActive ? 'lightcyan' : 'inherit',
+                    fontSize: isActive ? '20px' : 'inherit',
+                    fontWeight: isActive ? 'bold' : 'normal',
+                    textDecoration: 'none',
+                  })}
+                >
+                  Comment
+                </NavLink>
+              </ListItem>
+              <ListItem sx={{width: '100px' }}>
+                <NavLink
+                  to={'/pages/admin'}
+                  style={({ isActive }) => ({
+                    color: isActive ? 'lightcyan' : 'inherit',
+                    fontSize: isActive ? '20px' : 'inherit',
+                    fontWeight: isActive ? 'bold' : 'normal',
+                    textDecoration: 'none',
+                  })}
+                >
+                  Admin
+                </NavLink>
+              </ListItem>
             </List>
           </Toolbar>
         </Container>
@@ -41,3 +124,4 @@ const ToolBar = () => {
 };
 
 export default ToolBar;
+

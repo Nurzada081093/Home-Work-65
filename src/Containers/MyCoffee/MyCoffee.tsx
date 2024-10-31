@@ -2,7 +2,7 @@ import ToolBar from '../../Components/ToolBar/ToolBar.tsx';
 import { Route, Routes,  } from 'react-router-dom';
 import PagesOfContainers from '../../Components/PagesOfContainers/PagesOfContainers.tsx';
 import {Typography} from "@mui/material";
-import Admin from "../Admin/Admin.tsx";
+import Admin from "../../Components/Admin/Admin.tsx";
 
 const MyCoffee = () => {
   return (
@@ -18,7 +18,6 @@ const MyCoffee = () => {
           <Route path="*" element={<Typography variant="h1">Not found</Typography>} ></Route>
         </Routes>
       </main>
-
     </>
   );
 };
