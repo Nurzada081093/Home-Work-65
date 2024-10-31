@@ -19,7 +19,7 @@ const ToolBar = () => {
               <MenuIcon />
             </IconButton>
             <NavLink to={'/'} style={{ color: 'inherit', textDecoration: 'none', display: 'flex', alignItems: 'center', padding: '20px 0'}}>
-              <img style={{width: '80px', marginRight: '20px'}} src="https://wm-551003.oml.ru/d/log.png" alt=""/>
+              <img style={{width: '80px', marginRight: '20px'}} src="https://wm-551003.oml.ru/d/log.png" alt="My coffee"/>
               <Typography variant="h6" component="div" sx={{flexGrow: 1, fontSize: '23px', fontWeight: 600, fontStyle: 'oblique'}}>
                 My Coffee
               </Typography>
